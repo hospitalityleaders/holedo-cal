@@ -1,0 +1,287 @@
+/* ==========================================================================
+   Holedo Cal
+   Native Holedo visual foundation
+   ========================================================================== */
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/holedo/SourceSansPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/holedo/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/holedo/SourceSansPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/holedo/SourceSansPro-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+:root {
+  /* Holedo brand */
+  --holedo-menu: #384677;
+  --holedo-menu-text: #9CA4BC;
+  --holedo-dark: #272E41;
+  --holedo-text: #7C8990;
+  --holedo-background: #F6F8FA;
+  --holedo-blue: #32A3FD;
+  --holedo-blue-light: #98D1FE;
+  --holedo-blue-lightest: #CCE8FE;
+  --holedo-green: #7DC81B;
+  --holedo-orange: #FFA800;
+  --holedo-red: #FD3732;
+  --holedo-red-light: #FE9B98;
+  --holedo-red-lightest: #FECDCC;
+  --holedo-grey: #B5BDC2;
+  --holedo-light-grey: #DCE0E3;
+  --holedo-white: #FFFFFF;
+
+  /* Map the upstream semantic system onto Holedo */
+  --color-primary-50: #F3FAFF;
+  --color-primary-100: #E5F4FF;
+  --color-primary-200: #CCE8FE;
+  --color-primary-300: #98D1FE;
+  --color-primary-400: #65BAFD;
+  --color-primary-500: #32A3FD;
+  --color-primary-600: #158DE8;
+  --color-primary-700: #0D73BF;
+  --color-primary-800: #155D91;
+  --color-primary-900: #184D70;
+  --color-primary-950: #102F45;
+
+  --color-success: #7DC81B;
+  --color-warning: #FFA800;
+  --color-error: #FD3732;
+  --color-info: #32A3FD;
+
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F6F8FA;
+  --color-bg-tertiary: #EEF1F3;
+  --color-bg-inverse: #272E41;
+
+  --color-text-primary: #272E41;
+  --color-text-secondary: #7C8990;
+  --color-text-tertiary: #9CA4BC;
+  --color-text-inverse: #FFFFFF;
+
+  --color-text-glass-primary: #272E41;
+  --color-text-glass-secondary: #7C8990;
+  --color-text-glass-light: #9CA4BC;
+  --color-text-on-glass: #FFFFFF;
+
+  --color-border-light: #DCE0E3;
+  --color-border-default: #DCE0E3;
+  --color-border-dark: #B5BDC2;
+
+  /* Holedo does not use glass as an interface language */
+  --color-glass-bg-light: #FFFFFF;
+  --color-glass-bg-medium: #FFFFFF;
+  --color-glass-bg-strong: #FFFFFF;
+  --color-glass-bg-card: #FFFFFF;
+  --color-glass-bg-card-enhanced: #FFFFFF;
+  --color-glass-bg-overlay: #FFFFFF;
+  --color-glass-bg-overlay-enhanced: #FFFFFF;
+
+  --color-border-glass-light: #DCE0E3;
+  --color-border-glass-medium: #DCE0E3;
+  --color-border-glass-strong: #B5BDC2;
+  --color-border-glass-dark: #DCE0E3;
+  --color-border-glass-dark-medium: #B5BDC2;
+  --color-border-glass-dark-strong: #7C8990;
+
+  --font-family-sans: "Source Sans Pro", Arial, sans-serif;
+
+  /* Holedo rectangular geometry */
+  --radius-sm: 2px;
+  --radius-default: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 2px;
+  --radius-2xl: 2px;
+  --radius-3xl: 2px;
+
+  /* Restrained surfaces */
+  --shadow-xs: 0 1px 2px rgb(39 46 65 / 0.04);
+  --shadow-sm: 0 1px 3px rgb(39 46 65 / 0.08);
+  --shadow-default: 0 2px 6px rgb(39 46 65 / 0.08);
+  --shadow-md: 0 4px 12px rgb(39 46 65 / 0.10);
+  --shadow-lg: 0 8px 24px rgb(39 46 65 / 0.12);
+  --shadow-xl: 0 12px 32px rgb(39 46 65 / 0.14);
+
+  --shadow-glass-sm: var(--shadow-sm);
+  --shadow-glass-md: var(--shadow-md);
+  --shadow-glass-lg: var(--shadow-lg);
+  --shadow-glass-xl: var(--shadow-xl);
+  --shadow-glass-button: none;
+  --shadow-glass-card: var(--shadow-sm);
+  --shadow-glass-card-enhanced: var(--shadow-sm);
+
+  --glass-blur-light: none;
+  --glass-blur-medium: none;
+  --glass-blur-strong: none;
+  --glass-blur-heavy: none;
+
+  --glass-gradient-primary: #32A3FD;
+  --glass-gradient-secondary: #32A3FD;
+  --glass-gradient-overlay: #32A3FD;
+  --glass-gradient-fallback: #32A3FD;
+}
+
+html,
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: var(--holedo-dark);
+  background: var(--holedo-background);
+}
+
+body {
+  margin: 0;
+}
+
+/* Keep genuinely circular UI circular. */
+img.rounded-full,
+.rounded-full,
+.status-toggle,
+.status-toggle-slider {
+  border-radius: 9999px;
+}
+
+
+/* HOLEDO PRODUCT SHELL */
+
+.holedo-product-nav {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 54px;
+  background: var(--holedo-menu);
+  border: 0;
+  color: var(--holedo-white);
+}
+
+.holedo-product-nav__inner {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.holedo-product-nav__left,
+.holedo-product-nav__right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.holedo-product-nav__left {
+  gap: 12px;
+}
+
+.holedo-product-nav__menu {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: var(--holedo-menu-text);
+}
+
+.holedo-product-nav__menu:hover {
+  background: var(--holedo-dark);
+  color: var(--holedo-white);
+}
+
+.holedo-product-brand {
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--holedo-menu-text);
+  text-decoration: none;
+}
+
+.holedo-product-brand:hover {
+  color: var(--holedo-white);
+}
+
+.holedo-product-brand__logo {
+  display: block;
+  width: 44px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.holedo-product-brand__name {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.holedo-product-intro {
+  flex: 0 0 auto;
+  padding: 34px 32px 24px;
+  background: var(--holedo-background);
+}
+
+.holedo-product-intro h1 {
+  margin: 0;
+  color: var(--holedo-dark);
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 42px;
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.holedo-product-intro p {
+  margin: 8px 0 0;
+  color: var(--holedo-text);
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .holedo-product-nav__inner {
+    padding: 0 12px;
+  }
+
+  .holedo-product-brand__logo {
+    width: 38px;
+  }
+
+  .holedo-product-intro {
+    padding: 26px 18px 20px;
+  }
+
+  .holedo-product-intro h1 {
+    font-size: 36px;
+  }
+
+  .holedo-product-intro p {
+    font-size: 17px;
+  }
+}

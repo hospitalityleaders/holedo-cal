@@ -5,6 +5,9 @@
 @import "./base/typography.css";
 @import "./base/base.css";
 
+/* Holedo native product layer */
+@import "./holedo.css";
+
 /* Import design token utility classes */
 @import "./design-tokens.css";
 
