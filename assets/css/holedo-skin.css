@@ -1,0 +1,2836 @@
+:root {
+  --holedo-menu: #384677;
+  --holedo-menu-text: #9CA4BC;
+  --holedo-header: #272E41;
+  --holedo-body: #7C8990;
+  --holedo-bg: #F6F8FA;
+  --holedo-blue: #32A3FD;
+  --holedo-blue-light: #98D1FE;
+  --holedo-blue-lightest: #CCE8FE;
+  --holedo-green: #7DC81B;
+  --holedo-orange: #FFA800;
+  --holedo-red: #FD3732;
+  --holedo-border: #DCE0E3;
+
+  --color-primary-50: #F6FBFF;
+  --color-primary-100: #CCE8FE;
+  --color-primary-200: #98D1FE;
+  --color-primary-300: #98D1FE;
+  --color-primary-400: #32A3FD;
+  --color-primary-500: #32A3FD;
+  --color-primary-600: #32A3FD;
+  --color-primary-700: #238BDD;
+  --color-primary-800: #1B70B4;
+  --color-primary-900: #272E41;
+
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F6F8FA;
+  --color-bg-tertiary: #F6F8FA;
+  --color-bg-inverse: #272E41;
+
+  --color-border-light: #DCE0E3;
+  --color-border-default: #B5BDC2;
+  --color-border-dark: #7C8990;
+
+  --color-accent-turquoise: #32A3FD;
+  --fc-event-text-color: #FFFFFF;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Source Sans Pro", Arial, sans-serif !important;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #F6F8FA !important;
+  color: #7C8990 !important;
+}
+
+body {
+  width: 100% !important;
+  min-height: 100vh !important;
+}
+
+#dashboard-root {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #F6F8FA !important;
+}
+
+#dashboard-root > .shrink-0 {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #384677 !important;
+}
+
+#dashboard-root > .shrink-0 > .w-full {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #384677 !important;
+}
+
+nav.brand-nav {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #384677 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+nav.brand-nav > .w-full {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 20px !important;
+}
+
+nav.brand-nav > .w-full > .flex {
+  height: 52px !important;
+  min-height: 52px !important;
+}
+
+nav.brand-nav img[src*="/branding/holedo-logo"],
+nav.brand-nav img[src*="/images/brand/logo-with-text"] {
+  content: url("/images/holedo/holedo-icon-dark.svg") !important;
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  max-width: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+}
+
+#user-menu > button {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 4px 0 !important;
+  min-height: 42px !important;
+}
+
+#user-menu > button:hover,
+#user-menu > button:focus {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+#user-menu > button > div {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#user-menu > button > span {
+  color: #FFFFFF !important;
+}
+
+#user-menu > button > svg {
+  color: #9CA4BC !important;
+}
+
+#dashboard-content-container,
+#dashboard-content-container main,
+#dashboard-content-container main > .flex-1,
+#calendar-grid {
+  background: #F6F8FA !important;
+}
+
+#dashboard-sidebar {
+  background: #FFFFFF !important;
+}
+
+#dashboard-sidebar > .p-6 {
+  background: #FFFFFF !important;
+}
+
+.dashboard-nav-section-title {
+  color: #9CA4BC !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link {
+  color: #7C8990 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link > span {
+  color: inherit !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link > svg {
+  color: inherit !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link:hover {
+  color: #272E41 !important;
+  background: #CCE8FE !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link:hover > span,
+#dashboard-sidebar .dashboard-nav-link:hover > svg {
+  color: #272E41 !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link--active {
+  color: #FFFFFF !important;
+  background: #32A3FD !important;
+  background-image: none !important;
+  border-color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link--active > span,
+#dashboard-sidebar .dashboard-nav-link--active > svg {
+  color: #FFFFFF !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link--needs-setup {
+  color: #272E41 !important;
+  background: #CCE8FE !important;
+  background-image: none !important;
+  box-shadow: inset 3px 0 0 #32A3FD !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link--needs-setup > span {
+  color: #272E41 !important;
+}
+
+#dashboard-sidebar .dashboard-nav-link--needs-setup > svg {
+  color: #32A3FD !important;
+}
+
+.dashboard-nav-notification--info {
+  background: #32A3FD !important;
+  color: #FFFFFF !important;
+  border-color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar a[href="/holedo"] {
+  color: #FFFFFF !important;
+  background: #32A3FD !important;
+  background-image: none !important;
+  border-color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar a[href="/holedo"] span,
+#dashboard-sidebar a[href="/holedo"] svg {
+  color: #FFFFFF !important;
+}
+
+#copy-scheduling-link {
+  color: #32A3FD !important;
+  border-color: #98D1FE !important;
+  background: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+#copy-scheduling-link:hover {
+  color: #FFFFFF !important;
+  border-color: #32A3FD !important;
+  background: #32A3FD !important;
+}
+
+[data-testid="onboarding-checklist"] {
+  background: #FFFFFF !important;
+  border-color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+[data-testid="onboarding-checklist"] summary > span:first-of-type {
+  background: #CCE8FE !important;
+  color: #32A3FD !important;
+}
+
+[data-testid="onboarding-checklist"] summary .text-tymeslot-800 {
+  color: #272E41 !important;
+}
+
+[data-testid="onboarding-checklist"] summary .text-tymeslot-500,
+[data-testid="onboarding-checklist"] summary .text-tymeslot-400 {
+  color: #7C8990 !important;
+}
+
+[data-testid="onboarding-checklist"] [class*="border-turquoise-"] {
+  border-color: #98D1FE !important;
+}
+
+[data-testid="onboarding-checklist"] [class*="bg-turquoise-50"] {
+  background: #CCE8FE !important;
+}
+
+[data-testid="onboarding-checklist"] [class*="text-turquoise-"] {
+  color: #32A3FD !important;
+}
+
+[data-testid="onboarding-checklist"] [class*="bg-turquoise-600"],
+[data-testid="onboarding-checklist"] [class*="bg-turquoise-700"] {
+  background: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+[data-testid="onboarding-checklist"] a[class*="bg-turquoise-"],
+[data-testid="onboarding-checklist"] button[class*="bg-turquoise-"] {
+  background: #32A3FD !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+[data-testid="onboarding-checklist"] a[class*="bg-turquoise-"] *,
+[data-testid="onboarding-checklist"] button[class*="bg-turquoise-"] * {
+  color: #FFFFFF !important;
+}
+
+[data-testid="onboarding-checklist"] button[class*="hover:border-turquoise"] {
+  border-color: #98D1FE !important;
+}
+
+#dashboard-root [class*="text-turquoise-"] {
+  color: #32A3FD !important;
+}
+
+#dashboard-root [class*="border-turquoise-"] {
+  border-color: #98D1FE !important;
+}
+
+#dashboard-root [class*="bg-turquoise-50"] {
+  background-color: #CCE8FE !important;
+}
+
+#dashboard-root [class*="bg-turquoise-100"] {
+  background-color: #98D1FE !important;
+}
+
+#dashboard-root [class*="bg-turquoise-500"],
+#dashboard-root [class*="bg-turquoise-600"],
+#dashboard-root [class*="bg-turquoise-700"] {
+  background-color: #32A3FD !important;
+}
+
+#dashboard-root [class*="from-turquoise-"],
+#dashboard-root [class*="to-turquoise-"],
+#dashboard-root [class*="from-cyan-"],
+#dashboard-root [class*="to-cyan-"] {
+  background-image: none !important;
+}
+
+.text-tymeslot-900,
+.text-tymeslot-800,
+.text-tymeslot-700 {
+  color: #272E41 !important;
+}
+
+.text-tymeslot-600,
+.text-tymeslot-500,
+.text-tymeslot-400 {
+  color: #7C8990 !important;
+}
+
+.fc-event,
+.fc-event-main,
+.fc-v-event,
+.fc-timegrid-event,
+.fc-daygrid-event {
+  background-color: #32A3FD !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+.fc-event *,
+.fc-event-main *,
+.fc-v-event *,
+.fc-timegrid-event *,
+.fc-daygrid-event * {
+  color: #FFFFFF !important;
+}
+
+.fc-event-title,
+.fc-event-time,
+.fc-event-title-container,
+.fc-event-main-frame,
+.fc-event-main-frame *,
+.fc-timegrid-event .fc-event-time,
+.fc-timegrid-event .fc-event-title {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+#calendar-grid .fc-event .text-tymeslot-900,
+#calendar-grid .fc-event .text-tymeslot-800,
+#calendar-grid .fc-event .text-tymeslot-700,
+#calendar-grid .fc-event .text-tymeslot-600,
+#calendar-grid .fc-event .text-tymeslot-500,
+#calendar-grid .fc-event .text-tymeslot-400 {
+  color: #FFFFFF !important;
+}
+
+#calendar-grid [class*="calendar-event"],
+#calendar-grid [class*="event-card"] {
+  background-color: #32A3FD !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+#calendar-grid [class*="calendar-event"] *,
+#calendar-grid [class*="event-card"] *,
+#calendar-grid [class*="event-title"],
+#calendar-grid [class*="event-time"] {
+  color: #FFFFFF !important;
+}
+
+#calendar-grid [class*="event-time"] {
+  opacity: 0.88 !important;
+}
+
+.bg-green-500,
+.bg-green-600,
+.bg-emerald-500,
+.bg-emerald-600 {
+  background-color: #7DC81B !important;
+  color: #FFFFFF !important;
+}
+
+.bg-red-500,
+.bg-red-600,
+.bg-rose-500,
+.bg-rose-600 {
+  background-color: #FD3732 !important;
+  color: #FFFFFF !important;
+}
+
+.bg-orange-500,
+.bg-orange-600,
+.bg-amber-500,
+.bg-amber-600 {
+  background-color: #FFA800 !important;
+  color: #FFFFFF !important;
+}
+
+input,
+select,
+textarea {
+  color: #272E41 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9CA4BC !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #32A3FD !important;
+  box-shadow: 0 0 0 1px #32A3FD !important;
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #272E41 !important;
+}
+
+#auth-video-container,
+.video-background-container,
+.background-motion-toggle {
+  display: none !important;
+}
+
+/* HOLEDO TOKEN OVERRIDES START */
+
+:root {
+  /* Holedo identity */
+  --holedo-menu: #384677;
+  --holedo-menu-text: #9CA4BC;
+  --holedo-header: #272E41;
+  --holedo-body: #7C8990;
+  --holedo-bg: #F6F8FA;
+
+  /* Holedo interactive blue */
+  --holedo-blue: #32A3FD;
+  --holedo-blue-light: #98D1FE;
+  --holedo-blue-lightest: #CCE8FE;
+
+  /* Holedo status colours */
+  --holedo-green: #7DC81B;
+  --holedo-orange: #FFA800;
+  --holedo-red: #FD3732;
+
+  /*
+   * Remap the Tymeslot interactive palette.
+   * Tymeslot uses these tokens throughout buttons,
+   * calendar events, navigation, forms and hover states.
+   */
+  --color-primary-50: #F4FAFF !important;
+  --color-primary-100: #E5F4FF !important;
+  --color-primary-200: #CCE8FE !important;
+  --color-primary-300: #98D1FE !important;
+  --color-primary-400: #65BAFD !important;
+  --color-primary-500: #32A3FD !important;
+  --color-primary-600: #278FDF !important;
+  --color-primary-700: #1E79C1 !important;
+  --color-primary-800: #1965A1 !important;
+  --color-primary-900: #155282 !important;
+
+  --color-turquoise-50: #F4FAFF !important;
+  --color-turquoise-100: #E5F4FF !important;
+  --color-turquoise-200: #CCE8FE !important;
+  --color-turquoise-300: #98D1FE !important;
+  --color-turquoise-400: #65BAFD !important;
+  --color-turquoise-500: #32A3FD !important;
+  --color-turquoise-600: #278FDF !important;
+  --color-turquoise-700: #1E79C1 !important;
+
+  --color-cyan-50: #F4FAFF !important;
+  --color-cyan-100: #E5F4FF !important;
+  --color-cyan-200: #CCE8FE !important;
+  --color-cyan-300: #98D1FE !important;
+  --color-cyan-400: #65BAFD !important;
+  --color-cyan-500: #32A3FD !important;
+  --color-cyan-600: #278FDF !important;
+  --color-cyan-700: #1E79C1 !important;
+
+  --gradient-turquoise: linear-gradient(135deg, #32A3FD 0%, #278FDF 100%) !important;
+  --glass-gradient-primary: linear-gradient(135deg, #32A3FD 0%, #278FDF 100%) !important;
+}
+
+/* Active navigation is Holedo blue, never turquoise */
+.dashboard-nav-link--active {
+  background: #32A3FD !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+.dashboard-nav-link--active svg,
+.dashboard-nav-link--active span {
+  color: #FFFFFF !important;
+}
+
+/* Setup items use blue rather than the original green turquoise treatment */
+.dashboard-nav-link--needs-setup {
+  background: #F4FAFF !important;
+  color: #278FDF !important;
+}
+
+.dashboard-nav-link--needs-setup::before {
+  background: #32A3FD !important;
+}
+
+.dashboard-nav-link--needs-setup svg {
+  color: #32A3FD !important;
+}
+
+/* Tymeslot turquoise utility buttons become Holedo buttons */
+.bg-turquoise-600,
+[class~="bg-turquoise-600"] {
+  background-color: #32A3FD !important;
+}
+
+.hover\:bg-turquoise-700:hover,
+[class~="hover:bg-turquoise-700"]:hover {
+  background-color: #278FDF !important;
+}
+
+.text-turquoise-600,
+.text-turquoise-700 {
+  color: #32A3FD !important;
+}
+
+.border-turquoise-100,
+.border-turquoise-200,
+.border-turquoise-300,
+.border-turquoise-400 {
+  border-color: #CCE8FE !important;
+}
+
+/* Remove turquoise green glow and gradients from cards */
+.card-glass:hover,
+.brand-card:hover {
+  border-color: #CCE8FE !important;
+  box-shadow: 0 4px 12px rgba(39, 46, 65, 0.08) !important;
+}
+
+.card-glass-primary {
+  border-color: #98D1FE !important;
+  background: #F4FAFF !important;
+  box-shadow: none !important;
+}
+
+.glass-gradient {
+  border-color: #32A3FD !important;
+  background: #F4FAFF !important;
+}
+
+.glass-gradient::before {
+  background: none !important;
+}
+
+/* ON and OFF controls follow the Holedo style guide */
+.status-toggle.status-toggle--active,
+.status-toggle[aria-checked="true"] {
+  background: #7DC81B !important;
+  border-color: #7DC81B !important;
+  box-shadow: none !important;
+}
+
+.status-toggle.status-toggle--active:hover,
+.status-toggle[aria-checked="true"]:hover {
+  background: #6DB315 !important;
+  border-color: #6DB315 !important;
+  box-shadow: none !important;
+}
+
+.status-toggle.status-toggle--inactive,
+.status-toggle[aria-checked="false"] {
+  background: #DCE0E3 !important;
+  border-color: #B5BDC2 !important;
+  box-shadow: none !important;
+}
+
+.status-toggle.status-toggle--inactive:hover,
+.status-toggle[aria-checked="false"]:hover {
+  background: #DCE0E3 !important;
+  border-color: #9CA4BC !important;
+}
+
+.status-toggle:focus {
+  box-shadow: 0 0 0 2px #7DC81B !important;
+}
+
+/* White text whenever Holedo accent blue is used as a solid surface */
+.bg-turquoise-600,
+.dashboard-nav-link--active,
+button[class*="bg-turquoise-600"],
+a[class*="bg-turquoise-600"] {
+  color: #FFFFFF !important;
+}
+
+.bg-turquoise-600 *,
+.dashboard-nav-link--active *,
+button[class*="bg-turquoise-600"] *,
+a[class*="bg-turquoise-600"] * {
+  color: #FFFFFF !important;
+}
+
+/* Holedo page colours */
+body,
+#dashboard-root,
+#dashboard-content-container,
+main {
+  background-color: #F6F8FA !important;
+  color: #7C8990;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page-title {
+  color: #272E41;
+}
+
+/* Proper round user avatar */
+#user-menu .w-10.h-10,
+#user-menu .w-10.h-10 img {
+  border-radius: 50% !important;
+}
+
+/* Remove the white capsule around the user control in the blue header */
+.brand-nav #user-menu > button {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.brand-nav #user-menu > button:hover,
+.brand-nav #user-menu > button:focus {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.brand-nav #user-menu > button > span,
+.brand-nav #user-menu > button > svg {
+  color: #9CA4BC !important;
+}
+
+/* HOLEDO TOKEN OVERRIDES END */
+
+/* HOLEDO CALENDAR EVENTS START */
+
+#calendar-grid [class*="bg-calendar-"] {
+  background-color: #32A3FD !important;
+  background-image: none !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+#calendar-grid [class*="bg-calendar-"] * {
+  color: #FFFFFF !important;
+}
+
+#calendar-grid [class*="bg-calendar-"]:hover {
+  background-color: #278FDF !important;
+}
+
+/* HOLEDO CALENDAR EVENTS END */
+
+/* HOLEDO REFINEMENT PASS START */
+
+:root {
+  --holedo-border: #DCE0E3;
+  --holedo-shadow: 0 1px 2px rgba(39, 46, 65, 0.06);
+}
+
+/* Header */
+
+nav.brand-nav > .w-full {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+nav.brand-nav > .w-full > .flex > div:first-child {
+  margin-left: 0 !important;
+}
+
+/* Responsive sidebar branding */
+
+#dashboard-sidebar img[src*="logo-with-text"],
+#dashboard-sidebar img[alt="Tymeslot"] {
+  content: url("/images/holedo/holedo-logo.svg") !important;
+  width: auto !important;
+  height: 32px !important;
+  max-width: 180px !important;
+  object-fit: contain !important;
+}
+
+/* User avatar */
+
+#user-menu > button > div {
+  border: 0 !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+#user-menu > button > div img {
+  border: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+}
+
+/* Quiet card treatment */
+
+#dashboard-root .card-glass,
+#dashboard-root .brand-card {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  box-shadow: var(--holedo-shadow) !important;
+}
+
+#dashboard-root .card-glass:hover,
+#dashboard-root .brand-card:hover {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  box-shadow: var(--holedo-shadow) !important;
+  transform: none !important;
+  translate: none !important;
+}
+
+#dashboard-root .card::before,
+#dashboard-root .card-glass::before,
+#dashboard-root .brand-card::before {
+  display: none !important;
+}
+
+/* Remove coloured decorative shadows */
+
+#dashboard-root [class*="shadow-turquoise"],
+#dashboard-root [class*="shadow-cyan"] {
+  --tw-shadow-color: rgba(39, 46, 65, 0.06) !important;
+}
+
+/* Setup area should not be surrounded by blue */
+
+#dashboard-root [data-testid="onboarding-checklist"] {
+  border-color: #DCE0E3 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root [data-testid="onboarding-checklist"] li > div {
+  border-color: #DCE0E3 !important;
+  box-shadow: none !important;
+}
+
+/* Toggles */
+
+#dashboard-root button[role="switch"][aria-checked="true"] {
+  background: #7DC81B !important;
+  border-color: #7DC81B !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root button[role="switch"][aria-checked="true"]:hover {
+  background: #70B918 !important;
+  border-color: #70B918 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root button[role="switch"][aria-checked="false"] {
+  background: #DCE0E3 !important;
+  border-color: #B5BDC2 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root button[role="switch"] > span {
+  background: #FFFFFF !important;
+}
+
+/* Availability page */
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-turquoise-50"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-turquoise-100"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-cyan-50"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-blue-50"] {
+  background-color: #FFFFFF !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="border-turquoise-"] {
+  border-color: #DCE0E3 !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="from-turquoise-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="to-turquoise-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="from-cyan-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="to-cyan-"] {
+  background-image: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main .glass-gradient,
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main .card-glass-primary {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main .glass-gradient::before,
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main .glass-gradient::after {
+  display: none !important;
+}
+
+/* Keep actual controls blue on Availability */
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main button[class*="bg-turquoise-600"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main a[class*="bg-turquoise-600"] {
+  background: #32A3FD !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/availability"].dashboard-nav-link--active)
+#dashboard-content-container main button[class*="bg-turquoise-50"] {
+  background: #CCE8FE !important;
+  border-color: #98D1FE !important;
+  color: #32A3FD !important;
+}
+
+/* Meetings page */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-linear-to-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="from-turquoise-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="from-cyan-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="from-blue-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="to-cyan-"],
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="to-blue-"] {
+  background-image: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main .glass-gradient,
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main .card-glass-primary {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main .glass-gradient::before,
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main .glass-gradient::after {
+  display: none !important;
+}
+
+/* If an active tab was white text on a removed gradient, reveal its label */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-linear-to-"][class*="text-white"] {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  color: #32A3FD !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-linear-to-"][class*="text-white"] * {
+  color: #32A3FD !important;
+}
+
+/* Embed page selected tab cleanup */
+
+body:has(#dashboard-sidebar a[href*="embed"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-linear-to-"][class*="text-white"] {
+  background: #FFFFFF !important;
+  background-image: none !important;
+  border-color: #DCE0E3 !important;
+  color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href*="embed"].dashboard-nav-link--active)
+#dashboard-content-container main [class*="bg-linear-to-"][class*="text-white"] * {
+  color: #32A3FD !important;
+}
+
+/* No floating animation on dashboard cards */
+
+#dashboard-content-container .embed-option-card:hover {
+  transform: none !important;
+  translate: none !important;
+  box-shadow: var(--holedo-shadow) !important;
+}
+
+/* Preserve calendar event treatment */
+
+#calendar-grid [class*="bg-calendar-"] {
+  background: #32A3FD !important;
+  background-image: none !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+#calendar-grid [class*="bg-calendar-"] * {
+  color: #FFFFFF !important;
+}
+
+/* HOLEDO REFINEMENT PASS END */
+
+/* HOLEDO AVAILABILITY CLEANUP START */
+
+/*
+ * Availability
+ * Remove the original turquoise panel treatment.
+ * Use a clean white surface with quiet grey structure.
+ */
+
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  border-width: 1px !important;
+  box-shadow: none !important;
+}
+
+/* Schedule tab bar */
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) > div:first-child {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  border-bottom-width: 1px !important;
+}
+
+/* Active schedule tab */
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) > div:first-child [role="presentation"].bg-turquoise-600 {
+  background: #32A3FD !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+/* New schedule */
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) button[phx-click="show_schedule_form"] {
+  background: #FFFFFF !important;
+  border-color: #B5BDC2 !important;
+  color: #7C8990 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) button[phx-click="show_schedule_form"]:hover {
+  background: #F6F8FA !important;
+  border-color: #7C8990 !important;
+  color: #272E41 !important;
+}
+
+/* Main Availability body */
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) > div:nth-child(2) {
+  background: #FFFFFF !important;
+}
+
+/* Working day rows */
+#availability-list .border-tymeslot-100.bg-white {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  border-width: 1px !important;
+  box-shadow: none !important;
+}
+
+/* Unavailable weekend rows */
+#availability-list .bg-white\/40 {
+  background: #F6F8FA !important;
+  border-color: #DCE0E3 !important;
+  border-width: 1px !important;
+}
+
+/* Active day switches */
+#availability-list button[role="switch"][aria-checked="true"] {
+  background: #32A3FD !important;
+  border-color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+/* Inactive day switches */
+#availability-list button[role="switch"][aria-checked="false"] {
+  background: #DCE0E3 !important;
+  border-color: #DCE0E3 !important;
+  box-shadow: none !important;
+}
+
+/* Time selectors */
+#availability-list select.input {
+  background-color: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  color: #272E41 !important;
+  box-shadow: none !important;
+}
+
+#availability-list select.input:focus {
+  border-color: #32A3FD !important;
+  box-shadow: 0 0 0 1px #32A3FD !important;
+}
+
+/* Add Break stays an action, not a filled blue badge */
+#availability-list button[phx-click="show_add_break_form"] {
+  background: transparent !important;
+  color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+#availability-list button[phx-click="show_add_break_form"]:hover {
+  background: #F6F8FA !important;
+  color: #272E41 !important;
+}
+
+/* Scheduling Preferences */
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) .card-glass {
+  background: #FFFFFF !important;
+  border: 1px solid #DCE0E3 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root div.border-2.rounded-token-2xl.border-turquoise-300.bg-turquoise-50:has(#availability-list) .card-glass:hover {
+  background: #FFFFFF !important;
+  border-color: #DCE0E3 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* HOLEDO AVAILABILITY CLEANUP END */
+
+/* HOLEDO HEADER CLEANUP START */
+
+nav.brand-nav > .w-full {
+  padding-left: 24px !important;
+  padding-right: 20px !important;
+}
+
+nav.brand-nav > .w-full > .flex > div:first-child {
+  margin-left: 0 !important;
+}
+
+nav.brand-nav img[src*="/branding/holedo-logo"],
+nav.brand-nav img[src*="/images/brand/logo-with-text"] {
+  margin-left: 0 !important;
+}
+
+/* Account control stays visually part of the blue bar */
+
+#user-menu > button {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+#user-menu > button:hover,
+#user-menu > button:focus {
+  background: rgba(255,255,255,0.06) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Avatar wrapper */
+
+#user-menu > button > div {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+/* Avatar image */
+
+#user-menu > button > div > img {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+}
+
+/* HOLEDO HEADER CLEANUP END */
+
+/* HOLEDO USER AVATAR CLEANUP START */
+
+#user-menu > button > div.w-10.h-10 {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* HOLEDO USER AVATAR CLEANUP END */
+
+/* HOLEDO RESPONSIVE HEADER START */
+
+/* Mobile hamburger */
+
+.dashboard-mobile-menu-toggle {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.dashboard-mobile-menu-toggle:hover,
+.dashboard-mobile-menu-toggle:focus {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.dashboard-mobile-menu-toggle svg {
+  color: #9CA4BC !important;
+}
+
+/* Slightly larger Holedo account avatar */
+
+#user-menu > button > div.w-10.h-10 {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+#user-menu > button > div.w-10.h-10 img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+}
+
+/* HOLEDO RESPONSIVE HEADER END */
+
+/* HOLEDO MOBILE HAMBURGER HARD OVERRIDE START */
+
+nav.brand-nav button.dashboard-mobile-menu-toggle,
+nav.brand-nav button.dashboard-mobile-menu-toggle:hover,
+nav.brand-nav button.dashboard-mobile-menu-toggle:focus,
+nav.brand-nav button.dashboard-mobile-menu-toggle:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+nav.brand-nav button.dashboard-mobile-menu-toggle svg {
+  color: #9CA4BC !important;
+  stroke: #9CA4BC !important;
+}
+
+/* HOLEDO MOBILE HAMBURGER HARD OVERRIDE END */
+
+/* HOLEDO MOBILE HAMBURGER FINAL OVERRIDE START */
+
+#dashboard-root nav.brand-nav button.dashboard-mobile-menu-toggle,
+#dashboard-root nav.brand-nav button.dashboard-mobile-menu-toggle:hover,
+#dashboard-root nav.brand-nav button.dashboard-mobile-menu-toggle:focus,
+#dashboard-root nav.brand-nav button.dashboard-mobile-menu-toggle:focus-visible,
+#dashboard-root nav.brand-nav button.dashboard-mobile-menu-toggle:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-root nav.brand-nav button.dashboard-mobile-menu-toggle svg {
+  color: #9CA4BC !important;
+  stroke: #9CA4BC !important;
+}
+
+/* HOLEDO MOBILE HAMBURGER FINAL OVERRIDE END */
+
+/* HOLEDO MOBILE FLYOUT START */
+
+@media (max-width: 1023px) {
+
+  /* Main flyout surface */
+
+  #dashboard-sidebar {
+    background: #384677 !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar > .p-6 {
+    background: #384677 !important;
+  }
+
+  /* Mobile flyout Holedo branding */
+
+  #dashboard-sidebar > .p-6 > div:first-child > div:first-child {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  #dashboard-sidebar > .p-6 > div:first-child > div:first-child img[src*="logo-with-text"],
+  #dashboard-sidebar > .p-6 > div:first-child > div:first-child img[alt="Tymeslot"] {
+    content: url("/images/holedo/holedo-icon-dark.svg") !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    object-fit: contain !important;
+  }
+
+  #dashboard-sidebar > .p-6 > div:first-child > div:first-child::after {
+    content: "Holedo";
+    color: #9CA4BC;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  /* Close control */
+
+  #dashboard-sidebar .dashboard-sidebar-close {
+    background: transparent !important;
+    border: 1px solid rgba(156, 164, 188, 0.28) !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar .dashboard-sidebar-close:hover,
+  #dashboard-sidebar .dashboard-sidebar-close:focus {
+    background: rgba(255,255,255,0.06) !important;
+    border-color: rgba(156, 164, 188, 0.45) !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar .dashboard-sidebar-close svg {
+    color: #9CA4BC !important;
+    stroke: #9CA4BC !important;
+  }
+
+  /* Section headings */
+
+  #dashboard-sidebar nav .dashboard-nav-section-title {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-section-title::before,
+  #dashboard-sidebar nav .dashboard-nav-section-title::after {
+    border-color: rgba(156, 164, 188, 0.18) !important;
+    background-color: rgba(156, 164, 188, 0.18) !important;
+  }
+
+  /* Normal navigation */
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):not(.dashboard-nav-link--needs-setup) {
+    background: transparent !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):not(.dashboard-nav-link--needs-setup) span,
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):not(.dashboard-nav-link--needs-setup) svg {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):not(.dashboard-nav-link--needs-setup):hover {
+    background: rgba(255,255,255,0.06) !important;
+    color: #CCE8FE !important;
+    transform: none !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):not(.dashboard-nav-link--needs-setup):hover span,
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):not(.dashboard-nav-link--needs-setup):hover svg {
+    color: #CCE8FE !important;
+  }
+
+  /* Active navigation */
+
+  #dashboard-sidebar nav .dashboard-nav-link--active {
+    background: #32A3FD !important;
+    background-image: none !important;
+    border-color: #32A3FD !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link--active span,
+  #dashboard-sidebar nav .dashboard-nav-link--active svg {
+    color: #FFFFFF !important;
+  }
+
+  /* Setup state such as Integrations */
+
+  #dashboard-sidebar nav .dashboard-nav-link--needs-setup {
+    background: rgba(50,163,253,0.10) !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+    border-color: transparent !important;
+    box-shadow: inset 3px 0 0 #32A3FD !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link--needs-setup span,
+  #dashboard-sidebar nav .dashboard-nav-link--needs-setup svg {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link--needs-setup:hover {
+    background: rgba(50,163,253,0.16) !important;
+    color: #CCE8FE !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link--needs-setup:hover span,
+  #dashboard-sidebar nav .dashboard-nav-link--needs-setup:hover svg {
+    color: #CCE8FE !important;
+  }
+
+  #dashboard-sidebar .dashboard-nav-notification--info {
+    background: #32A3FD !important;
+    color: #FFFFFF !important;
+    border-color: #32A3FD !important;
+    box-shadow: none !important;
+  }
+}
+
+/* HOLEDO MOBILE FLYOUT END */
+
+/* HOLEDO MOBILE FLYOUT RADIUS START */
+
+@media (max-width: 1023px) {
+
+  #dashboard-sidebar .dashboard-nav-link,
+  #dashboard-sidebar .dashboard-sidebar-close,
+  #dashboard-sidebar #copy-scheduling-link {
+    border-radius: 6px !important;
+  }
+
+  #dashboard-sidebar a[href="/holedo"] {
+    border-radius: 6px !important;
+  }
+
+}
+
+/* HOLEDO MOBILE FLYOUT RADIUS END */
+
+/* HOLEDO MOBILE FLYOUT FINISH START */
+
+@media (max-width: 1023px) {
+
+  /* Tighter Holedo radius */
+  #dashboard-sidebar .dashboard-nav-link,
+  #dashboard-sidebar .dashboard-sidebar-close,
+  #dashboard-sidebar #copy-scheduling-link,
+  #dashboard-sidebar a[href="/holedo"] {
+    border-radius: 3px !important;
+  }
+
+  /* Holedo menu typography */
+  #dashboard-sidebar .dashboard-nav-link:not(.dashboard-nav-link--active),
+  #dashboard-sidebar .dashboard-nav-link:not(.dashboard-nav-link--active) svg {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar .dashboard-nav-section-title {
+    color: #9CA4BC !important;
+  }
+
+  /* Mobile flyout logo: mark only, slightly larger */
+  #dashboard-sidebar > div > div.lg\:hidden img[src*="logo-with-text"] {
+    content: url("/images/holedo/holedo-logo.svg") !important;
+    width: 54px !important;
+    height: 54px !important;
+    object-fit: contain !important;
+  }
+
+  /* Quiet clipboard control */
+  #dashboard-sidebar #copy-scheduling-link {
+    background: transparent !important;
+    border: 1px solid #98D1FE !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar #copy-scheduling-link:hover,
+  #dashboard-sidebar #copy-scheduling-link:focus {
+    background: rgba(255,255,255,0.04) !important;
+    border-color: #98D1FE !important;
+    box-shadow: none !important;
+  }
+
+}
+
+/* HOLEDO MOBILE FLYOUT FINISH END */
+
+
+/* HOLEDO MOBILE FLYOUT HOVER START */
+
+@media (max-width: 1023px) {
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):hover {
+    background: #272E41 !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):hover span,
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):hover svg {
+    color: #9CA4BC !important;
+    stroke: currentColor !important;
+  }
+
+}
+
+/* HOLEDO MOBILE FLYOUT HOVER END */
+
+/* HOLEDO MOBILE FLYOUT DETAIL FIX START */
+
+@media (max-width: 1023px) {
+
+  /* Remove added Holedo word beside the mark */
+  #dashboard-sidebar > .p-6 > div:first-child > div:first-child::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* Hover darkens only the background */
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):hover {
+    background: #272E41 !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):hover span,
+  #dashboard-sidebar nav .dashboard-nav-link:not(.dashboard-nav-link--active):hover svg {
+    color: #9CA4BC !important;
+  }
+
+  /* Copy link uses Holedo accent blue */
+  #dashboard-sidebar #copy-scheduling-link,
+  #dashboard-sidebar #copy-scheduling-link:hover,
+  #dashboard-sidebar #copy-scheduling-link:focus {
+    border-color: #32A3FD !important;
+  }
+
+  #dashboard-sidebar #copy-scheduling-link svg {
+    color: #32A3FD !important;
+    stroke: #32A3FD !important;
+  }
+
+  /* View Page icon stays white */
+  #dashboard-sidebar a[href="/holedo"] svg {
+    color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+  }
+
+}
+
+/* HOLEDO MOBILE FLYOUT DETAIL FIX END */
+
+/* HOLEDO FLYOUT HOVER FINAL START */
+
+@media (max-width: 1023px) {
+
+  #dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover {
+    background: #272E41 !important;
+    background-color: #272E41 !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover span {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover svg {
+    color: #9CA4BC !important;
+    stroke: #9CA4BC !important;
+  }
+
+}
+
+/* HOLEDO FLYOUT HOVER FINAL END */
+
+/* HOLEDO FLYOUT HOVER ABSOLUTE OVERRIDE START */
+
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover,
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):focus-visible {
+  background: #272E41 !important;
+  background-color: #272E41 !important;
+  background-image: none !important;
+
+  color: #9CA4BC !important;
+
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover span,
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):focus-visible span {
+  color: #9CA4BC !important;
+}
+
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover svg,
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):focus-visible svg {
+  color: #9CA4BC !important;
+  stroke: #9CA4BC !important;
+}
+
+/* Kill any Tymeslot hover overlay */
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover::before,
+html body #dashboard-root aside#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* HOLEDO FLYOUT HOVER ABSOLUTE OVERRIDE END */
+
+/* HOLEDO FLYOUT CLOSE BUTTON CLEANUP START */
+
+#dashboard-sidebar .dashboard-sidebar-close,
+#dashboard-sidebar .dashboard-sidebar-close:hover,
+#dashboard-sidebar .dashboard-sidebar-close:focus,
+#dashboard-sidebar .dashboard-sidebar-close:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+#dashboard-sidebar .dashboard-sidebar-close svg {
+  color: #9CA4BC !important;
+  stroke: #9CA4BC !important;
+}
+
+/* HOLEDO FLYOUT CLOSE BUTTON CLEANUP END */
+
+/* HOLEDO MEETING MANAGEMENT CLEANUP START */
+
+/* Main Meeting Management surface */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] {
+  background: #FFFFFF !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* Remove decorative turquoise corner glow completely */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] > .absolute.top-0.right-0 {
+  display: none !important;
+}
+
+/* Main heading icon */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] .w-14.h-14 {
+  background: #FFFFFF !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] .w-14.h-14 svg {
+  color: #32A3FD !important;
+}
+
+/* Information badges */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] span.inline-flex {
+  background: #F6F8FA !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] span.inline-flex .bg-turquoise-500,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] span.inline-flex .bg-cyan-500 {
+  background: #32A3FD !important;
+}
+
+/* Right hand information cards */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] [class~="lg:w-80"] > [class~="group/item"] {
+  background: #FFFFFF !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] [class~="lg:w-80"] > [class~="group/item"]:hover {
+  background: #FFFFFF !important;
+  border-color: #B5BDC2 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Small action icon containers */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] [class~="group/item"] .w-10.h-10 {
+  background: #FFFFFF !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+/* Keep semantic icon colours, but remove decorative coloured fills */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] [class~="group/item"]:first-child .w-10.h-10 {
+  color: #32A3FD !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] [class~="group/item"]:nth-child(2) .w-10.h-10 {
+  color: #FD3732 !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container .mt-12.card-glass[class~="group/info"] [class~="group/item"]:nth-child(3) .w-10.h-10 {
+  color: #32A3FD !important;
+}
+
+/* HOLEDO MEETING MANAGEMENT CLEANUP END */
+
+/* HOLEDO MEETINGS HEADER AND FILTERS START */
+
+/* Page title icon: no tile, no shadow, Holedo grey */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+div.flex.items-center.mb-4:has(> h1.text-4xl)
+> div.w-14.h-14 {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+div.flex.items-center.mb-4:has(> h1.text-4xl)
+> div.w-14.h-14 svg {
+  color: #7C8990 !important;
+  stroke: #7C8990 !important;
+}
+
+/* Meetings filter wrapper: remove the large floating pill */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+div:has(> button[phx-click="filter_meetings"]) {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  gap: 6px !important;
+}
+
+/* All three filter buttons */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"] {
+  background: #CCE8FE !important;
+  background-image: none !important;
+  border: 1px solid #98D1FE !important;
+  border-radius: 4px !important;
+  color: #32A3FD !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"] span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"] svg {
+  color: #32A3FD !important;
+  stroke: currentColor !important;
+}
+
+/* Selected filter */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"].text-white {
+  background: #32A3FD !important;
+  background-image: none !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"].text-white span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"].text-white svg {
+  color: #FFFFFF !important;
+  stroke: currentColor !important;
+}
+
+/* Quiet hover, no gradients or floating effect */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container main
+button[phx-click="filter_meetings"]:not(.text-white):hover {
+  background: #98D1FE !important;
+  background-image: none !important;
+  border-color: #98D1FE !important;
+  color: #32A3FD !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* HOLEDO MEETINGS HEADER AND FILTERS END */
+
+/* HOLEDO MEETINGS FILTER SEMANTICS START */
+
+/* Keep every Meetings filter icon visible */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"] svg {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 20px !important;
+  height: 20px !important;
+  flex-shrink: 0 !important;
+}
+
+/* UPCOMING */
+
+/* Rest */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"]:not(.text-white) {
+  background: #CCE8FE !important;
+  background-image: none !important;
+  border: 1px solid #98D1FE !important;
+  color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"]:not(.text-white) span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"]:not(.text-white) svg {
+  color: #32A3FD !important;
+  stroke: #32A3FD !important;
+}
+
+/* Hover */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"]:not(.text-white):hover {
+  background: #98D1FE !important;
+  border-color: #98D1FE !important;
+}
+
+/* Selected */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"].text-white {
+  background: #32A3FD !important;
+  background-image: none !important;
+  border-color: #32A3FD !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"].text-white span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="upcoming"].text-white svg {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+}
+
+
+/* PAST */
+
+/* Rest */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"]:not(.text-white) {
+  background: #F6F8FA !important;
+  background-image: none !important;
+  border: 1px solid #DCE0E3 !important;
+  color: #7C8990 !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"]:not(.text-white) span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"]:not(.text-white) svg {
+  color: #7C8990 !important;
+  stroke: #7C8990 !important;
+}
+
+/* Hover */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"]:not(.text-white):hover {
+  background: #DCE0E3 !important;
+  border-color: #B5BDC2 !important;
+}
+
+/* Selected */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"].text-white {
+  background: #272E41 !important;
+  background-image: none !important;
+  border-color: #272E41 !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"].text-white span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"].text-white svg {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+}
+
+
+/* CANCELLED */
+
+/* Rest */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"]:not(.text-white) {
+  background: #FECDCC !important;
+  background-image: none !important;
+  border: 1px solid #FE9B98 !important;
+  color: #FD3732 !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"]:not(.text-white) span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"]:not(.text-white) svg {
+  color: #FD3732 !important;
+  stroke: #FD3732 !important;
+}
+
+/* Hover */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"]:not(.text-white):hover {
+  background: #FE9B98 !important;
+  border-color: #FE9B98 !important;
+}
+
+/* Selected */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"].text-white {
+  background: #FD3732 !important;
+  background-image: none !important;
+  border-color: #FD3732 !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"].text-white span,
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="cancelled"].text-white svg {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+}
+
+/* Preserve compact Holedo geometry */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"] {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* HOLEDO MEETINGS FILTER SEMANTICS END */
+
+/* HOLEDO MEETINGS FILTER SIZE START */
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"] {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"][phx-value-filter="past"].text-white {
+  background: #272E41 !important;
+  background-color: #272E41 !important;
+  border-color: #272E41 !important;
+}
+
+/* HOLEDO MEETINGS FILTER SIZE END */
+
+/* HOLEDO RADIUS CLEANUP START */
+
+/*
+ * Holedo uses restrained corner radii.
+ * Keep circles, avatars and switches untouched.
+ */
+
+/* Standard buttons and navigation */
+button.rounded-xl,
+button.rounded-2xl,
+a.rounded-xl,
+a.rounded-2xl,
+.dashboard-nav-link {
+  border-radius: 6px !important;
+}
+
+/* Tymeslot token buttons, tabs and controls */
+.rounded-token-lg,
+.rounded-token-xl {
+  border-radius: 6px !important;
+}
+
+/* Larger panels and cards */
+.rounded-token-2xl,
+.card-glass {
+  border-radius: 10px !important;
+}
+
+/* Inputs */
+input.input,
+select.input,
+textarea.input {
+  border-radius: 6px !important;
+}
+
+/* Meeting filter group itself */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+div:has(> button[phx-click="filter_meetings"]) {
+  border-radius: 8px !important;
+}
+
+/* Meeting filter buttons */
+body:has(#dashboard-sidebar a[href="/dashboard/meetings"].dashboard-nav-link--active)
+#dashboard-content-container
+button[phx-click="filter_meetings"] {
+  border-radius: 6px !important;
+}
+
+/*
+ * Explicitly preserve genuinely round controls.
+ */
+button[role="switch"],
+.rounded-full,
+#user-menu img,
+#user-menu > button > div.w-10.h-10 {
+  border-radius: 9999px !important;
+}
+
+/* HOLEDO RADIUS CLEANUP END */
+
+/* HOLEDO RADIUS SYSTEM V2 START */
+
+/*
+ * Holedo radius system
+ *
+ * Small controls: 4px
+ * Standard controls: 6px
+ * Cards / panels: 8px
+ *
+ * Circles, avatars and switches remain circular.
+ */
+
+/* ---------------------------------------------------------
+   BUTTONS / NAVIGATION / TABS
+   --------------------------------------------------------- */
+
+#dashboard-root button:not([role="switch"]):not(.rounded-full),
+#dashboard-root a.dashboard-nav-link,
+#dashboard-root .rounded-token-lg,
+#dashboard-root .rounded-token-xl {
+  border-radius: 6px !important;
+}
+
+
+/* ---------------------------------------------------------
+   INPUTS
+   --------------------------------------------------------- */
+
+#dashboard-root input,
+#dashboard-root select,
+#dashboard-root textarea,
+#dashboard-root .input {
+  border-radius: 6px !important;
+}
+
+
+/* ---------------------------------------------------------
+   LARGE TOKEN RADII
+   --------------------------------------------------------- */
+
+#dashboard-root .rounded-xl,
+#dashboard-root .rounded-2xl,
+#dashboard-root .rounded-3xl,
+#dashboard-root .rounded-token-2xl,
+#dashboard-root .rounded-token-3xl {
+  border-radius: 8px !important;
+}
+
+
+/* ---------------------------------------------------------
+   TAILWIND ARBITRARY RADII
+   Catches classes such as rounded-[2.5rem]
+   --------------------------------------------------------- */
+
+#dashboard-root [class*="rounded-["]:not(.rounded-full) {
+  border-radius: 8px !important;
+}
+
+
+/* ---------------------------------------------------------
+   COMMON TYME SLOT CARDS / PANELS
+   --------------------------------------------------------- */
+
+#dashboard-root .card,
+#dashboard-root .card-glass,
+#dashboard-root .modal-content {
+  border-radius: 8px !important;
+}
+
+
+/* ---------------------------------------------------------
+   PAGE TITLE ICON BOXES
+   Overview / Meeting Settings / Embed / Profile / Automation
+   --------------------------------------------------------- */
+
+#dashboard-root h1 + *,
+#dashboard-root .flex.items-center > .w-14.h-14.rounded-2xl {
+  border-radius: 6px !important;
+}
+
+
+/* ---------------------------------------------------------
+   PRESERVE TRUE CIRCLES
+   --------------------------------------------------------- */
+
+#dashboard-root .rounded-full,
+#dashboard-root button[role="switch"],
+#dashboard-root button[role="switch"] > span,
+#dashboard-root #user-menu img,
+#dashboard-root #user-menu > button > div.w-10.h-10 {
+  border-radius: 9999px !important;
+}
+
+
+/* ---------------------------------------------------------
+   PROFILE PHOTO
+   Do not distort the account image treatment.
+   --------------------------------------------------------- */
+
+#dashboard-root img.object-cover.rounded-full {
+  border-radius: 9999px !important;
+}
+
+/* HOLEDO RADIUS SYSTEM V2 END */
+
+/* HOLEDO ICON BOX RADIUS CLEANUP START */
+
+/*
+ * Tymeslot uses rounded-2xl on the 56px page/section icon containers.
+ * Reduce these from 16px to Holedo's restrained radius.
+ */
+#dashboard-root div.w-14.h-14.rounded-2xl {
+  border-radius: 6px !important;
+}
+
+/* HOLEDO ICON BOX RADIUS CLEANUP END */
+
+/* HOLEDO DESKTOP SIDEBAR START */
+
+@media (min-width: 1024px) {
+
+  #dashboard-sidebar {
+    background: #384677 !important;
+    background-color: #384677 !important;
+  }
+
+  #dashboard-sidebar .dashboard-nav-section-title {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link {
+    background: transparent !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link svg,
+  #dashboard-sidebar nav a.dashboard-nav-link span {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover {
+    background: #272E41 !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover svg,
+  #dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover span {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link--active {
+    background: #32A3FD !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link--active svg,
+  #dashboard-sidebar nav a.dashboard-nav-link--active span {
+    color: #FFFFFF !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) {
+    background: transparent !important;
+    background-image: none !important;
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) svg,
+  #dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) span {
+    color: #9CA4BC !important;
+  }
+
+  #dashboard-sidebar .dashboard-nav-notification--info {
+    background: #32A3FD !important;
+    color: #FFFFFF !important;
+  }
+}
+
+/* HOLEDO DESKTOP SIDEBAR END */
+
+/* HOLEDO SIDEBAR DARK SURFACE FINAL START */
+
+#dashboard-sidebar,
+#dashboard-sidebar > div,
+#dashboard-sidebar nav {
+  background: #384677 !important;
+  background-color: #384677 !important;
+}
+
+/* Normal navigation */
+#dashboard-sidebar nav a.dashboard-nav-link {
+  background: transparent !important;
+  background-image: none !important;
+  color: #9CA4BC !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link svg,
+#dashboard-sidebar nav a.dashboard-nav-link span {
+  color: #9CA4BC !important;
+}
+
+/* Active page */
+#dashboard-sidebar nav a.dashboard-nav-link--active {
+  background: #32A3FD !important;
+  background-color: #32A3FD !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--active svg,
+#dashboard-sidebar nav a.dashboard-nav-link--active span {
+  color: #FFFFFF !important;
+}
+
+/* Hover */
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover {
+  background: #272E41 !important;
+  background-color: #272E41 !important;
+  background-image: none !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover svg,
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover span {
+  color: #9CA4BC !important;
+}
+
+/* Integrations setup state stays quiet */
+#dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) svg,
+#dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) span {
+  color: #9CA4BC !important;
+}
+
+/* Section headings */
+#dashboard-sidebar .dashboard-nav-section-title {
+  color: #9CA4BC !important;
+}
+
+/* Keep setup notification visible */
+#dashboard-sidebar .dashboard-nav-notification--info {
+  background: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+/* HOLEDO SIDEBAR DARK SURFACE FINAL END */
+
+/* HOLEDO DESKTOP SIDEBAR SURFACE FIX START */
+
+@media (min-width: 1024px) {
+
+  #dashboard-sidebar,
+  #dashboard-sidebar > .p-6,
+  #dashboard-sidebar > .p-6 > .mb-6.flex.gap-2,
+  #dashboard-sidebar nav,
+  #dashboard-sidebar nav > div,
+  #dashboard-sidebar nav > div > div {
+    background: #384677 !important;
+    background-color: #384677 !important;
+    background-image: none !important;
+  }
+
+  #dashboard-sidebar {
+    min-height: 100% !important;
+  }
+
+  #dashboard-sidebar > .p-6 {
+    min-height: 100% !important;
+  }
+
+  /* View Page */
+  #dashboard-sidebar a[href="/holedo"] {
+    background: #32A3FD !important;
+    background-color: #32A3FD !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar a[href="/holedo"] svg,
+  #dashboard-sidebar a[href="/holedo"] span {
+    color: #FFFFFF !important;
+  }
+
+  /* Copy link */
+  #dashboard-sidebar #copy-scheduling-link {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 1px solid #32A3FD !important;
+    color: #32A3FD !important;
+    box-shadow: none !important;
+  }
+
+  #dashboard-sidebar #copy-scheduling-link svg {
+    color: #32A3FD !important;
+  }
+}
+
+/* HOLEDO DESKTOP SIDEBAR SURFACE FIX END */
+
+/* HOLEDO TOP NAV DARK BLUE START */
+
+html body .brand-nav {
+  background: #272E41 !important;
+  background-color: #272E41 !important;
+  background-image: none !important;
+}
+
+/* HOLEDO TOP NAV DARK BLUE END */
+
+/* HOLEDO ACTIVE SIDEBAR HOVER FIX START */
+
+#dashboard-sidebar nav a.dashboard-nav-link--active:hover,
+#dashboard-sidebar nav a.dashboard-nav-link--active:focus-visible {
+  background: #272E41 !important;
+  background-color: #272E41 !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--active:hover svg,
+#dashboard-sidebar nav a.dashboard-nav-link--active:hover span,
+#dashboard-sidebar nav a.dashboard-nav-link--active:focus-visible svg,
+#dashboard-sidebar nav a.dashboard-nav-link--active:focus-visible span {
+  color: #FFFFFF !important;
+}
+
+/* HOLEDO ACTIVE SIDEBAR HOVER FIX END */
+
+/* HOLEDO TMR RADIUS SYSTEM FINAL START */
+
+/*
+ * Holedo/TMR style guide:
+ * rectangular UI = 2px
+ * genuinely round controls remain round
+ */
+
+/* Buttons, tabs and navigation */
+#dashboard-root button:not([role="switch"]):not(.rounded-full),
+#dashboard-root a.dashboard-nav-link {
+  border-radius: 2px !important;
+}
+
+/* Inputs and controls */
+#dashboard-root input,
+#dashboard-root select,
+#dashboard-root textarea {
+  border-radius: 2px !important;
+}
+
+/* Tymeslot radius utility classes */
+#dashboard-root .rounded-lg,
+#dashboard-root .rounded-xl,
+#dashboard-root .rounded-2xl,
+#dashboard-root .rounded-token-lg,
+#dashboard-root .rounded-token-xl,
+#dashboard-root .rounded-token-2xl {
+  border-radius: 2px !important;
+}
+
+/* Cards and panels */
+#dashboard-root .card-glass,
+#dashboard-root .brand-card {
+  border-radius: 2px !important;
+}
+
+/* Page and section icon boxes */
+#dashboard-root div.w-14.h-14,
+#dashboard-root div.w-10.h-10 {
+  border-radius: 2px !important;
+}
+
+/* Preserve genuinely round UI */
+#dashboard-root .rounded-full,
+#dashboard-root button[role="switch"],
+#dashboard-root .status-toggle,
+#dashboard-root input[type="radio"],
+#dashboard-root input[type="checkbox"] {
+  border-radius: 9999px !important;
+}
+
+/* HOLEDO TMR RADIUS SYSTEM FINAL END */
+
+/* HOLEDO TMR BORDER SYSTEM FINAL START */
+
+/*
+ * Holedo/TMR:
+ * restrained 2px corners
+ * fine 1px borders
+ */
+
+/* Standard bordered UI */
+#dashboard-root .border,
+#dashboard-root .border-2,
+#dashboard-root [class*="border-2"],
+#dashboard-root input,
+#dashboard-root select,
+#dashboard-root textarea {
+  border-width: 1px !important;
+}
+
+/* Cards and panels */
+#dashboard-root .card-glass,
+#dashboard-root .brand-card {
+  border-width: 1px !important;
+}
+
+/* Buttons */
+#dashboard-root button {
+  border-width: 1px !important;
+}
+
+/* Sidebar controls */
+#dashboard-sidebar #copy-scheduling-link {
+  border-width: 1px !important;
+}
+
+/* Preserve borderless controls where already intentional */
+#dashboard-root button[role="switch"] {
+  border-width: 0 !important;
+}
+
+/* HOLEDO TMR BORDER SYSTEM FINAL END */
+
+/* HOLEDO PAGE TITLE ICON CLEANUP START */
+
+#dashboard-content-container main .flex.items-center.mb-4 > .w-14.h-14 {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin-right: 10px !important;
+}
+
+#dashboard-content-container main .flex.items-center.mb-4 > .w-14.h-14 svg {
+  color: #7C8990 !important;
+  stroke: #7C8990 !important;
+}
+
+/* HOLEDO PAGE TITLE ICON CLEANUP END */
+
+/* HOLEDO DASHBOARD BUTTON RADIUS FINAL START */
+
+#dashboard-root .btn {
+  border-radius: 2px !important;
+}
+
+/* HOLEDO DASHBOARD BUTTON RADIUS FINAL END */
+
+/* HOLEDO THEME CURRENT STYLE BADGE START */
+
+#dashboard-root .group\/theme .rounded-full {
+  border-radius: 2px !important;
+}
+
+/* HOLEDO THEME CURRENT STYLE BADGE END */
+
+/* HOLEDO THEME PREVIEW IMAGES START */
+
+/* LiveView may restore the upstream src; CSS keeps the Holedo previews visible. */
+
+#dashboard-root img[src*="quill-theme-preview"] {
+  content: url("/images/holedo/counter_concierge.png") !important;
+}
+
+#dashboard-root img[src*="rhythm-theme-preview"] {
+  content: url("/images/holedo/transresort_bali_exterior.png") !important;
+}
+
+/* HOLEDO THEME PREVIEW IMAGES END */
+
+/* HOLEDO CURRENT STYLE BADGE RADIUS START */
+
+#dashboard-root .group\/theme .rounded-full {
+  border-radius: 2px !important;
+}
+
+/* HOLEDO CURRENT STYLE BADGE RADIUS END */
+
+/* ========================================================================== 
+   Native Holedo fork equivalents
+   These replace selectors that previously depended on the Nginx injected shell.
+   ========================================================================== */
+
+.holedo-product-nav {
+  background: #272E41 !important;
+  background-color: #272E41 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.holedo-product-nav__inner {
+  padding-left: 24px !important;
+  padding-right: 20px !important;
+}
+
+.holedo-product-brand,
+.holedo-product-brand__name {
+  color: #9CA4BC !important;
+}
+
+.holedo-product-brand:hover,
+.holedo-product-brand:hover .holedo-product-brand__name {
+  color: #FFFFFF !important;
+}
+
+.holedo-product-nav__menu,
+.holedo-product-nav__menu:hover,
+.holedo-product-nav__menu:focus,
+.holedo-product-nav__menu:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #9CA4BC !important;
+}
+
+.holedo-product-nav__right #user-menu > button {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  min-height: 42px !important;
+  padding: 4px 0 !important;
+}
+
+.holedo-product-nav__right #user-menu > button:hover,
+.holedo-product-nav__right #user-menu > button:focus {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.holedo-product-nav__right #user-menu > button > div {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border: 0 !important;
+  border-radius: 9999px !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.holedo-product-nav__right #user-menu > button > div img {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  border-radius: 9999px !important;
+  box-shadow: none !important;
+}
+
+.holedo-product-nav__right #user-menu > button > span,
+.holedo-product-nav__right #user-menu > button > svg {
+  color: #9CA4BC !important;
+}
+
+.holedo-sidebar-mobile-logo {
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+
+/* NATIVE HOLEDO SHELL CORRECTION START */
+
+/* Shared Holedo product bar */
+
+.holedo-product-nav {
+  height: 50px !important;
+  background: #384677 !important;
+  background-color: #384677 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.holedo-product-nav__inner {
+  height: 50px !important;
+  padding-left: 24px !important;
+  padding-right: 20px !important;
+}
+
+.holedo-product-brand {
+  height: 50px !important;
+  gap: 14px !important;
+}
+
+.holedo-product-brand__logo {
+  width: 56px !important;
+  height: 36px !important;
+  object-fit: contain !important;
+}
+
+.holedo-product-brand,
+.holedo-product-brand__name {
+  color: #9CA4BC !important;
+}
+
+.holedo-product-brand:hover,
+.holedo-product-brand:hover .holedo-product-brand__name {
+  color: #FFFFFF !important;
+}
+
+/* Light dashboard sidebar */
+
+#dashboard-sidebar,
+#dashboard-sidebar > div,
+#dashboard-sidebar > .p-6,
+#dashboard-sidebar > .p-6 > .mb-6.flex.gap-2,
+#dashboard-sidebar nav,
+#dashboard-sidebar nav > div,
+#dashboard-sidebar nav > div > div {
+  background: #F6F8FA !important;
+  background-color: #F6F8FA !important;
+  background-image: none !important;
+}
+
+#dashboard-sidebar {
+  border-right: 1px solid #DCE0E3 !important;
+}
+
+#dashboard-sidebar .dashboard-nav-section-title {
+  color: #9CA4BC !important;
+}
+
+#dashboard-sidebar .dashboard-nav-section-title::before,
+#dashboard-sidebar .dashboard-nav-section-title::after {
+  background: #DCE0E3 !important;
+  background-color: #DCE0E3 !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link {
+  background: transparent !important;
+  background-image: none !important;
+  color: #7C8990 !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link svg,
+#dashboard-sidebar nav a.dashboard-nav-link span {
+  color: inherit !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover,
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):focus-visible {
+  background: #E5F4FF !important;
+  background-color: #E5F4FF !important;
+  color: #272E41 !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover svg,
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):hover span,
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):focus-visible svg,
+#dashboard-sidebar nav a.dashboard-nav-link:not(.dashboard-nav-link--active):focus-visible span {
+  color: #272E41 !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--active,
+#dashboard-sidebar nav a.dashboard-nav-link--active:hover,
+#dashboard-sidebar nav a.dashboard-nav-link--active:focus-visible {
+  background: #32A3FD !important;
+  background-color: #32A3FD !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--active svg,
+#dashboard-sidebar nav a.dashboard-nav-link--active span,
+#dashboard-sidebar nav a.dashboard-nav-link--active:hover svg,
+#dashboard-sidebar nav a.dashboard-nav-link--active:hover span,
+#dashboard-sidebar nav a.dashboard-nav-link--active:focus-visible svg,
+#dashboard-sidebar nav a.dashboard-nav-link--active:focus-visible span {
+  color: #FFFFFF !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) {
+  background: #E5F4FF !important;
+  background-color: #E5F4FF !important;
+  color: #272E41 !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) span {
+  color: #272E41 !important;
+}
+
+#dashboard-sidebar nav a.dashboard-nav-link--needs-setup:not(.dashboard-nav-link--active) svg {
+  color: #32A3FD !important;
+}
+
+#dashboard-sidebar .dashboard-nav-notification--info {
+  background: #32A3FD !important;
+  color: #FFFFFF !important;
+}
+
+#dashboard-sidebar #copy-scheduling-link {
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  border-color: #98D1FE !important;
+  color: #32A3FD !important;
+  box-shadow: none !important;
+}
+
+#dashboard-sidebar #copy-scheduling-link svg {
+  color: #32A3FD !important;
+}
+
+.holedo-sidebar-mobile-logo {
+  width: 56px !important;
+  height: 36px !important;
+  object-fit: contain !important;
+}
+
+/* Shared dashboard content start */
+
+.holedo-dashboard-page {
+  padding-top: 28px !important;
+}
+
+/* Restore the two pixel geometry the switch thumb was designed around */
+
+#dashboard-root button[role="switch"] {
+  border-width: 2px !important;
+}
+
+/* Quiet schedule overflow control */
+
+#schedule-actions-dropdown > button,
+#schedule-actions-dropdown > button.schedule-overflow-trigger {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#schedule-actions-dropdown > button:hover,
+#schedule-actions-dropdown > button:focus {
+  border: 0 !important;
+  background: rgba(39, 46, 65, 0.12) !important;
+  box-shadow: none !important;
+}
+
+/* NATIVE HOLEDO SHELL CORRECTION END */

@@ -211,6 +211,10 @@ defmodule TymeslotWeb.DashboardLive do
       <%!-- Content --%>
       <div class={if @live_action == :calendar, do: "flex-1 flex flex-col min-h-0", else: ""}>
         <%= if @live_action == :calendar do %>
+          <section class="holedo-product-intro">
+            <h1>Calendar</h1>
+            <p>Schedule and manage time</p>
+          </section>
           <div
             :if={OnboardingChecklist.visible?(@current_user, @integration_status)}
             class="shrink-0 px-3 pt-2 md:px-4"
