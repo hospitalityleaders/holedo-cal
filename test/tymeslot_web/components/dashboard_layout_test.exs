@@ -27,13 +27,13 @@ defmodule TymeslotWeb.Components.DashboardLayoutTest do
     html = render_component(&DashboardLayout.dashboard_layout/1, component_assigns)
     doc = Floki.parse_document!(html)
 
-    assert html =~ "Tymeslot"
+    assert html =~ "Calendar"
     assert html =~ "Test User"
     assert html =~ "Main Content"
 
     assert Floki.find(doc, "div#dashboard-root[phx-hook='ClipboardCopy']") != []
     assert Floki.find(doc, "aside#dashboard-sidebar") != []
-    assert Floki.find(doc, "nav.brand-nav") != []
+    assert Floki.find(doc, "header.holedo-product-nav") != []
   end
 
   test "top_navigation renders correctly" do
@@ -48,7 +48,7 @@ defmodule TymeslotWeb.Components.DashboardLayoutTest do
     html = render_component(&DashboardLayout.top_navigation/1, assigns)
     doc = Floki.parse_document!(html)
 
-    assert html =~ "Tymeslot"
+    assert html =~ "Calendar"
     assert html =~ "Test User"
 
     assert Floki.find(doc, "button[aria-label='Toggle sidebar']") != []

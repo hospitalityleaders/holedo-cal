@@ -115,7 +115,7 @@ defmodule TymeslotWeb.Components.DashboardLayout do
           </.link>
         </div>
 
-        <div class="holedo-product-nav__right">
+        <div class="holedo-product-nav__right" data-tour="user-menu">
           <.live_component
             module={UserDropdownComponent}
             id="user-dropdown"
