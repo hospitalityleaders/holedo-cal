@@ -48,7 +48,7 @@ defmodule TymeslotWeb.Components.DashboardSidebar do
         <%!-- Mobile Close Button --%>
         <div class="lg:hidden flex items-center justify-between mb-6">
           <img
-            src={~p"/images/holedo/holedo-icon-dark.svg"}
+            src={~p"/images/holedo/holedo-mark-menu.svg"}
             alt="Holedo"
             class="holedo-sidebar-mobile-logo"
           />

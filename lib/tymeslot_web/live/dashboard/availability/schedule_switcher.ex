@@ -96,7 +96,7 @@ defmodule TymeslotWeb.Dashboard.Availability.ScheduleSwitcher do
             on_toggle="toggle_schedule_menu"
             on_close="close_schedule_menu"
             target={@myself}
-            trigger_class="flex items-center justify-center w-8 h-8 rounded-token-lg text-white/80 hover:bg-white/20 hover:text-white transition-all duration-300 focus:outline-hidden focus:ring-2 focus:ring-white/60"
+            trigger_class="schedule-overflow-trigger flex items-center justify-center w-7 h-7 rounded-token-lg text-white/80 hover:text-white transition-colors duration-200 focus:outline-hidden"
             class="bg-white border-2 border-tymeslot-100 rounded-token-xl shadow-lg py-1 w-56"
             aria-label={dgettext("dashboard_availability", "Manage this schedule")}
           >

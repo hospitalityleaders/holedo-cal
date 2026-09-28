@@ -70,7 +70,7 @@ defmodule TymeslotWeb.Components.DashboardLayout do
           <%= if @full_width do %>
             <main class="flex-1 flex flex-col min-h-0">{render_slot(@inner_block)}</main>
           <% else %>
-            <div class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
+            <div class="holedo-dashboard-page max-w-7xl mx-auto px-4 lg:px-8 pb-8">
               <main>{render_slot(@inner_block)}</main>
             </div>
           <% end %>
@@ -107,7 +107,7 @@ defmodule TymeslotWeb.Components.DashboardLayout do
 
           <.link navigate={~p"/dashboard"} class="holedo-product-brand">
             <img
-              src={~p"/images/holedo/holedo-icon-dark.svg"}
+              src={~p"/images/holedo/holedo-mark-menu.svg"}
               alt="Holedo"
               class="holedo-product-brand__logo"
             />
