@@ -6,7 +6,6 @@
 @import "./base/base.css";
 
 /* Holedo native product layer */
-@import "./holedo.css";
 
 /* Import design token utility classes */
 @import "./design-tokens.css";
@@ -40,6 +39,11 @@
 
 /* Import reCAPTCHA styles */
 @import "./recaptcha.css";
+
+/* Holedo source theme. Keep these last among imports so Holedo wins over upstream component CSS. */
+@import "./holedo.css";
+@import "./holedo-skin.css";
+@import "./holedo-booking.css";
 
 /* ===========================================================================
    Tailwind v4 CSS-first configuration

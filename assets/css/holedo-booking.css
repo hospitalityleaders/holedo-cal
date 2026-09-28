@@ -1,0 +1,179 @@
+/* =========================================================
+   HOLEDO PUBLIC BOOKING UI
+
+   Tymeslot owns user selected palette colours.
+   Holedo owns structure, surfaces, typography and geometry.
+   ========================================================= */
+
+
+/* =========================================================
+   RHYTHM
+   ========================================================= */
+
+.theme-2 .scheduling-box {
+  background: #FFFFFF !important;
+  background-image: none !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 8px 24px rgba(39, 46, 65, 0.14) !important;
+}
+
+.theme-2 .slide-title,
+.theme-2 .organizer-greeting {
+  color: #272E41 !important;
+}
+
+.theme-2 .organizer-instruction {
+  color: #7C8990 !important;
+}
+
+.theme-2 .duration-card {
+  background: #75798B !important;
+  background-image: none !important;
+  border: 1px solid #75798B !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.theme-2 .duration-button {
+  background: transparent !important;
+  background-image: none !important;
+  border-radius: 2px !important;
+}
+
+.theme-2 .duration-name {
+  color: #FFFFFF !important;
+}
+
+.theme-2 .duration-description {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/*
+   Palette controlled and deliberately untouched:
+
+   .duration-time
+   .duration-icon
+   .avatar-checkmark
+   .next-button colours
+*/
+
+.theme-2 .next-button,
+.theme-2 .language-switcher-button-rhythm {
+  border-radius: 2px !important;
+}
+
+
+/* =========================================================
+   QUILL
+   ========================================================= */
+
+.theme-1 .glass-morphism-card {
+  background: #FFFFFF !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #DCE0E3 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 8px 24px rgba(39, 46, 65, 0.14) !important;
+}
+
+.theme-1 .step-navigation-card {
+  box-shadow: 0 4px 12px rgba(39, 46, 65, 0.10) !important;
+}
+
+.theme-1 .overview-title {
+  color: #272E41 !important;
+}
+
+.theme-1 .overview-description {
+  color: #7C8990 !important;
+}
+
+.theme-1 .duration-card {
+  background: #75798B !important;
+  background-image: none !important;
+  border: 1px solid #75798B !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.theme-1 .duration-card-title {
+  color: #FFFFFF !important;
+}
+
+.theme-1 .duration-card-description {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.theme-1 .duration-card-badge {
+  border-radius: 2px !important;
+}
+
+/*
+   Palette controlled and deliberately untouched:
+
+   .duration-card-badge colours
+   .duration-card-icon colours
+   .step-circle--active colours
+   .action-button--primary colours
+*/
+
+
+/* Neutral upcoming steps */
+
+.theme-1 .step-circle:not(.step-circle--active) {
+  background: #75798B !important;
+  background-image: none !important;
+  color: #FFFFFF !important;
+  border: 1px solid #75798B !important;
+  box-shadow: none !important;
+}
+
+.theme-1 .step-connector {
+  background: #DCE0E3 !important;
+  background-image: none !important;
+}
+
+.theme-1 .step-label,
+.theme-1 .step-label--upcoming {
+  color: #7C8990 !important;
+  text-shadow: none !important;
+}
+
+
+/* Primary action keeps the selected palette */
+
+.theme-1 .action-button--primary {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+
+/* Replace Quill's emoji tick with a clean check.
+   Badge background remains controlled by the selected palette. */
+
+.theme-1 .overview-success-badge {
+  box-shadow: none !important;
+}
+
+.theme-1 .overview-success-badge-emoji {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+.theme-1 .overview-success-badge-emoji::before {
+  content: "✓";
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+
+/* =========================================================
+   SHARED
+   ========================================================= */
+
+.language-switcher button {
+  border-radius: 2px !important;
+}
