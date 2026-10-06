@@ -1,6 +1,6 @@
 # Calendar: first Holedo 1.0 conformance test
 
-Source audit: 2026-10-06 at `0e54eb697dbb8870c28d8f6d6480da993235a8bb` (main). No running deployment was tested. Required target: Admin Standard 1.0 and UI Tokens 1.0; canonical SHA pending. **Result: not conformant / not release-ready against this standard.**
+Source audit: 2026-10-06 at `0e54eb697dbb8870c28d8f6d6480da993235a8bb` (main). No running deployment was tested. Required target: Admin Standard 1.0 and UI Tokens 1.0; canonical SHA `57d9bfdbec240e3eb2d62e5cbba324709c791136`. **Result: not conformant / not release-ready against this standard.**
 
 | Requirement | Baseline evidence | Result / next action |
 |---|---|---|
@@ -12,6 +12,7 @@ Source audit: 2026-10-06 at `0e54eb697dbb8870c28d8f6d6480da993235a8bb` (main). N
 | Tokens and theme modes | Native layout, `assets/css/app.css`, theme customization | Not visually tested; map shell tokens without replacing booking themes |
 | Icon/SEO/OG/homepage/access/legal | No Holedo common schema/form identified in inspected admin | Gap: canonical fields, initial HTML metadata and consent behavior |
 | Injection recovery | No canonical header/footer injection fields identified in inspected admin | Gap: layout-level exclusion on every admin route and preview |
+| Standalone root / embedded `/app` | No Holedo two-presentation contract previously declared; running routing not tested | Implement/verify navbar-free embedded mode and target WebViews |
 | Credential/session model | Router checks role/UI gate/live hook; Phoenix `SECRET_KEY_BASE` | Gap: migration or approved exception; preserve safeguards |
 | Native operations | Authentication/reCAPTCHA, Email, General, Users | Inventory preserved in contract; runtime regressions untested |
 
@@ -19,7 +20,7 @@ Paths are repository-relative. Documentation alone passes no implementation requ
 
 ## Implementation sequence
 
-1. Publish foundation and pin SHA. Resolve assets, domain, legal and admin-model decisions.
+1. Read the pinned published foundation. Resolve assets, domain, legal and admin-model decisions.
 2. Add common schema/migration/storage adapter, retaining operational keys/reset precedence. Test persistence, atomic rollback and conflicts.
 3. Add common landing form and shell, preserving native URLs, operations, role checks and live hooks.
 4. Add public shell/metadata/legal/theme/injection behavior; keep booking/scheduling themes intact.
@@ -38,7 +39,8 @@ Record application SHA, standards SHA, environment, date and reviewer. Each case
 - Harmless injection marker executes once publicly and never on `/admin`, nested/alias paths, admin sign-in/errors or previews; broken public code leaves admin recoverable.
 - Wrong/missing credential, roles, expiry/logout/replay/rotation, CSRF/socket rejection, first-user bootstrap and SaaS gate.
 - Existing Authentication, Email, General, Users, scheduling, calendar sync, video/payments, locales and booking customization regressions.
+- Standalone root has the Holedo global bar; `/app` and `/app/` omit it before paint and retain native controls. Same release/data/permissions; deep links, back/forward, reload, errors and safe auth returns preserve embedded mode. React/Flutter WebView device evidence and optional browser iframe support are recorded separately.
 
 ## Open decisions
 
-Publication/pin; canonical CDN/font/monogram URLs; final Calendar domain/login/signup destinations; legal policy/Iubenda coverage; token-gate migration versus approved role exception. Do not resolve these by changing live infrastructure in this patch.
+Canonical CDN/font/monogram URLs; final Calendar domain/login/signup destinations; legal policy/Iubenda coverage; token-gate migration versus approved role exception. Do not resolve these by changing live infrastructure in this patch.

@@ -4,9 +4,10 @@ Native deployment instructions remain in [README-Docker.md](../README-Docker.md)
 
 ## Before a proposed production release
 
-- Read [HOLEDO_STANDARD.md](HOLEDO_STANDARD.md), pin the published 1.0 SHA and resolve [baseline gaps](HOLEDO_CONFORMANCE.md).
+- Read [HOLEDO_STANDARD.md](HOLEDO_STANDARD.md), verify the pinned published 1.0 SHA and resolve [baseline gaps](HOLEDO_CONFORMANCE.md).
 - Complete canonical `admin/CONFORMANCE.md` in an isolated environment. Record application SHA, visual and behavioral/security evidence; a contract alone does not satisfy the gate.
 - Verify shell, vocabulary/order, widths/spacing, Source Sans Pro, tokens, 2px radius and Light/Dark/Automatic. Preserve native operations and booking themes.
+- Verify standalone root with the Holedo bar and navbar-free `/app`, including deep links, reload and authentication returns in supported React/Flutter WebViews. Keep native Calendar controls and permissions; test browser iframe framing separately if required.
 - Verify icon/meta/OG/homepage/access changes, database persistence/reset, consent and injection exclusion from every admin route/preview.
 - Resolve admin-model migration or approved exception. Current role/live checks remain active. If implemented, `ADMIN_TOKEN` and `ADMIN_SESSION_SECRET` are independent per-product secrets and never replace `SECRET_KEY_BASE`. Test sessions, rotation, CSRF and sign-out in isolation. Never put secret values in evidence.
 - Run relevant Calendar checks and meaningful tests for new behavior; record Verify workflow results rather than assuming a pass.
