@@ -35,6 +35,15 @@ Built on Elixir/OTP, so it keeps running while you sleep.
 
 </div>
 
+## Holedo standards
+
+Before changing Calendar admin, public UI or runtime settings, read
+[docs/HOLEDO_STANDARD.md](docs/HOLEDO_STANDARD.md). Calendar is the first Holedo
+Admin Standard 1.0 / UI Tokens 1.0 conformance test; implementation remains
+pending. See [the baseline audit](docs/HOLEDO_CONFORMANCE.md) and
+[the release gate](docs/DEPLOYMENT.md). Preserve native Calendar administration
+and booking themes. Production deployment requires explicit approval.
+
 <br />
 
 > **Open source, and staying that way.** Calendly is closed SaaS. Cal.com relicensed away from open source in 2026. Tymeslot's source stays public and self-hostable under the [GNU AGPLv3](LICENSE) — what you run today, you can keep running tomorrow.
