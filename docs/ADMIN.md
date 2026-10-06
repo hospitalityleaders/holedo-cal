@@ -1,5 +1,15 @@
 # Admin access (self-hosted)
 
+## Holedo standards integration
+
+Before extending Calendar admin or its public shell, read
+[the standards contract](HOLEDO_STANDARD.md),
+[the baseline conformance report](HOLEDO_CONFORMANCE.md) and
+[the deployment gate](DEPLOYMENT.md). The required target is Holedo Admin
+Standard 1.0 and UI Tokens 1.0. The native role-based admin is not yet certified.
+Preserve native settings, user actions, authorization and self-hosted/SaaS gates
+while adding the common sections. This guide does not enable admin-token access.
+
 Tymeslot ships with a self-hosted admin UI at `/admin`. From it an admin can
 toggle a small set of runtime settings (currently registration on/off,
 password authentication on/off, video transcoding on/off) without redeploying
